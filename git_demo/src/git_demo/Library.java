@@ -23,4 +23,12 @@ public class Library {
         myLibrary.addBook("To Kill a Mockingbird by Harper Lee");
         myLibrary.listBooks();
     }
+       public void removeBook(String bookName) {
+       if (books.remove(bookName)) {
+           System.out.println(bookName + " removed from library.");
+       } else {
+           System.out.println(bookName + " not found in library.");
+       }
+   }
+
 }
